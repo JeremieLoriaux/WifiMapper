@@ -78,3 +78,7 @@ Or use the provided requirements.txt.
 - The script is synchronous and intended for small-scale use. For larger datasets or high-frequency usage, consider rate limiting and more robust error handling.
 
 - Ensure your Google Maps API key has Geocoding and Maps JavaScript API enabled.
+
+## Authors
+- Mihai : [mihai-ilie-01](https://github.com/mihai-ilie-01)
+- Jeremie : [JeremieLoriaux](https://github.com/JeremieLoriaux)

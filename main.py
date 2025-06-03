@@ -17,6 +17,9 @@ if not url:
 map_client = googlemaps.Client(api_key)
 
 def scrape_wifi(url: str) -> list[dict]:
+    """
+    Scrapes the targeted url for for public wifi hotspots and returns a list containing the data of each hotspot in a dictionary with the keys "address" and "wifi_name".
+    """
     public_hotspots = []
     r = requests.get(url)
     soup = BeautifulSoup(r.content, "lxml")
@@ -30,6 +33,9 @@ def scrape_wifi(url: str) -> list[dict]:
     return public_hotspots
 
 def get_geocode(location: str):
+    """
+    Calls the google maps API to get the coordinates of the input address.
+    """
     try:
         location_geocode = map_client.geocode(location)
         if location_geocode:
@@ -40,6 +46,9 @@ def get_geocode(location: str):
     return None
 
 def create_html(hotspot_data):
+    """
+    Creates the html that makes a map with each hotspot location thanks to the google maps API.
+    """
     html_path = "google_map_hotspots.html"
     with open(html_path, "w") as f:
         f.write(f"""<!DOCTYPE html>
