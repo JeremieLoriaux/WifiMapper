@@ -106,4 +106,5 @@ def main()
 API_KEY=your_google_maps_api_key
 URL=your_target_url
 ```
-[![usefull video](http://img.youtube.com/vi/hsNlz7-abd0/default.jpg)](https://www.youtube.com/watch?v=hsNlz7-abd0 "How to Get a Google Maps API Key in 2 Mins")
+### Useful video to guide you through the process:
+[![](http://img.youtube.com/vi/hsNlz7-abd0/maxresdefault.jpg)](https://www.youtube.com/watch?v=hsNlz7-abd0 "How to Get a Google Maps API Key in 2 Mins")
